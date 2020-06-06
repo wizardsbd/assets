@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Norix Pill Banner</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="huwaei/mystyle.css?v=1.1">
+    <script type="text/javascript" src="huwaei/TweenMax.min.js"></script>
+    <script type="text/javascript" src="huwaei/Draggable.min.js"></script>
+</head>
+
+<body>
+    <div id="adArea" class="rct opacity0" style="opacity: 1;">
+        <div id="swipe_icon" class="rct opacity0" style="background-image: url('images/swipe_icon.png'); position: absolute; width: 300px; height: 250px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;">
+            <div id="arrow_r" class="" style="background-image: url('images/arrow_r.png'); position: absolute; width: 300px; height: 250px; opacity: 0.216223; transform: translate3d(15.6755px, 0px, 0px);"></div>
+            <div id="arrow_l" class="opacity0" style="background-image: url('images/arrow_l.png'); position: absolute; width: 300px; height: 250px; opacity: 0; transform: translate3d(-15.6755px, 0px, 0px);"></div>
+        </div>
+        <div class="wrap noEvents zIndex3000">
+            <div id="c1" class="cube" style="transform: matrix3d(0.516503, 0, 0.18901, 0, 0, 0.55, 0, 0, -0.18901, 0, 0.516503, 0, 0, -5.882, 0, 1);">
+                <div id="" class="pic1 rct face ff1" style="background-image: url('images/pic1.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic1 rct face ff2" style="background-image: url('images/pic1.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic1 rct face ff3" style="background-image: url('images/pic1.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic1 rct face ff4" style="background-image: url('images/pic1.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic2 rct face ff1 noVis" style="background-image: url('images/pic2.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic2 rct face ff2 noVis" style="background-image: url('images/pic2.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic2 rct face ff3 noVis" style="background-image: url('images/pic2.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic2 rct face ff4 noVis" style="background-image: url('images/pic2.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic3 rct face ff1 noVis" style="background-image: url('images/pic3.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic3 rct face ff2 noVis" style="background-image: url('images/pic3.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic3 rct face ff3 noVis" style="background-image: url('images/pic3.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="" class="pic3 rct face ff4 noVis" style="background-image: url('images/pic3.jpg'); position: absolute; width: 300px; height: 250px;"></div>
+                <div id="pic5" class="pic5 rct face f5" style="background-image: url('images/pic5.png'); position: absolute; width: 300px; height: 300px;"></div>
+                <div id="" class="pic5 rct face f6" style="background-image: url('images/pic5.png'); position: absolute; width: 300px; height: 300px;"></div>
+            </div>
+        </div>
+        <div class="wrap noEvents zIndex2400">
+            <div id="c2" class="cube">
+                <div id="shadow" class="rct face f7 noVis" style="background-image: url('images/shadow.png'); position: absolute; width: 300px; height: 300px; visibility: visible; opacity: 0.55; transform: matrix3d(1.375, 0, 0, 0, 0, 0, 1.375, 0, 0, -1.375, 0, 0, 0, 60, 0, 1);"></div>
+            </div>
+        </div>
+        <div id="cta" class="zIndex4000 opacity0" style="background-image: url('images/cta.png'); position: absolute; width: 300px; height: 250px; display: none;"></div>
+        <div id="cta_arrow" class="zIndex4000 opacity0" style="background-image: url('images/cta_arrow.png'); position: absolute; width: 300px; height: 250px; display: none;"></div>
+        <div id="dragArea" class="rct zIndex5000" style="transform: translate3d(0px, 0px, 0px); user-select: none; cursor: move; touch-action: none; z-index: 1001; top: 0px; left: 0px;"></div>
+    </div>
+    <script>
+        function ctaFunction() {
+            window.open("#", "_blank");
+        }
+
+        function startEvent(a) {
+            console.log(a)
+        }
+        var assets_url = "images/";
+        var assets = {
+            init: [{
+                format: "jpg",
+                type: "class",
+                scale: 1,
+                names: "pic1 pic2 pic3"
+            }, {
+                format: "png",
+                type: "class",
+                scale: 1,
+                names: "pic5"
+            }, {
+                format: "png",
+                type: "id",
+                scale: 1,
+                names: "swipe_icon cta cta_arrow shadow arrow_r arrow_l"
+            }, ],
+        };
+    </script>
+    <script src="huwaei/code.min.js"></script>
+</body>
+
+</html>
