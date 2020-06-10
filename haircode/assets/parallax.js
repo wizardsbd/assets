@@ -1,17 +1,4 @@
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-125816222-1');
-
 'use strict';
-
-if(sessionStorage.parallaxBg=='purplepatch'){		
-	sessionStorage.parallaxBg='null';
-}else{
-	document.querySelector(".parallax.bg1").style.backgroundImage="url('//parallax.thedailycampus.com/smc-smile/assets/smile.jpg')";
-	sessionStorage.parallaxBg="purplepatch";
-}
-console.log(sessionStorage.parallaxBg);
 
 var windowHeight = window.innerHeight,
     windowHeightExtra = 0;
